@@ -1,0 +1,51 @@
+/*Reseteo de css*/
+*html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(236, 131, 131);
+}
+div{
+    border: solid 1px black;
+    /*float: right; Ya no se usa*/
+    width: 350px;
+    padding: 35px;
+    text-align: center;
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    justify-content: right;
+    justify-content: center;
+}
+button{
+    margin-top: 15px;
+    padding: 10px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background: green;
+}
+button a:hover{
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ 

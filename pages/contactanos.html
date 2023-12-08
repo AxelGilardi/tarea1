@@ -6,69 +6,95 @@
     <title>Contacto</title>
 </head>
 <body>
-    <h1>Contactanos</h1>
+    <header>
+        <h1>Contactanos</h1>
+        <!-- Barra de navegacion -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="cotillon.html">Cotillon</a>
+                </li>
+                <li>
+                    <a href="reposteria.html">Reposteria</a>
+                </li>
+                <li>
+                    <a href="fiestas.html">Fiestas</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contactanos.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
     <!--Formulario-->
     <!--Configuracion para enviar los datos a una base de datos-->
     <!--Los atributos se usan el en backend-->
     <!--<form action="/database" method="post">-->
     <!--El metodop post hace que no sea vean los datos enviados-->
-        <form action="" method="post">
+    <form action="" method="post">
         <!--La etiqueta <br> hace un salto de linea-->
         <label for="nombre">Nombre: </label>
         <!--El id es el identificador, tiene que ser igual al for del label,
         el name es el nombre de donde se va a estar guardando los datos y
         required es el comando para que sea obligatorio cargar el dato-->
         <input type="text" id="nombre" name="nombre" required><br>
-
+        
         <label for="apellido">Apellido: </label>
         <input type="text" id="apellido" name="apellido" autofocus><br>
-
+        
         <label for="DNI">DNI: </label>
         <!--maxlength es el requerimiento de cantidad maxima de caracteres-->
         <input type="number" id="DNI" name="DNI" maxlength="8"><br>
-
+        
         <label for="edad">Edad: </label>
         <!--min es edad minima y max es edad maxima-->
         <input type="number" id="edad" name="edad" min="1" max="99"><br>
-
+        
         <label for="Contraseña">Contraseña: </label>
         <!--minlength es para poner un requerimiento de caracteres minimos-->
         <input type="password" id="contraseña" name="contraseña" minlength="8"><br>
-
+        
         <label for="email">Email: </label>
         <!--Pattern es para darle un diseño predeterminado a lo que tienen que cargar
         y placeholder es unejemplo que aparece escrito en el cuadro de dialogo-->
         <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
         placeholder="ejemplo@email.com"><br>
-
+        
         <input type="submit" value="Enviar Datos">
         <!--Boton para enviar los datos a la base de datos-->
         <button type="submit">
             Enviar datos con Boton 
         </button>
-    </form>
-    <!--Esto no es un formulario, por que no esta dentro de uno--> 
-    <label for="nombre">Nombre: </label>
-    <input type="text">
-
-    <div>
-        <button>
-            <!--Ruta relativa-->
-            <a href="../index.html#redes">Redes</a>
-        </button>
-    </div>
-
-    <div>
-        <button>
-            <!--Ruta absoluta-->
-            <!--target="_blank" abre la pagina en una nueva ventana-->
-            <a href="https://aulasvirtuales.frba.utn.edu.ar" target="_blank">Pagina UTN</a>
-        </button>
-    </div>
-    <!--src es la dirreccion de la imagen y alt, es lo que va a aparecer en caso de que no este la imagen-->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Messi en la seleccion  ">
-    <a href="../pages/fiestas.html">
+        </form>
+        <!--Esto no es un formulario, por que no esta dentro de uno--> 
+        <label for="nombre">Nombre: </label>
+        <input type="text">
+        
+        <div>
+            <button>
+                <!--Ruta relativa-->
+                <a href="../index.html#redes">Redes</a>
+            </button>
+        </div>
+        
+        <div>
+            <button>
+                <!--Ruta absoluta-->
+                <!--target="_blank" abre la pagina en una nueva ventana-->
+                <a href="https://aulasvirtuales.frba.utn.edu.ar" target="_blank">Pagina UTN</a>
+            </button>
+        </div>
+        <!--src es la dirreccion de la imagen y alt, es lo que va a aparecer en caso de que no este la imagen-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg" alt="Messi en la seleccion  ">
+        <a href="../pages/fiestas.html">
         <img src="../assets/images/bd2bcf787bb897d5e7011ab6b1673651.jpg" alt="Messi">
-    </a>
+        </a>
+    </main>
 </body>
 </html>

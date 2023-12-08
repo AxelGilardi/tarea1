@@ -1,0 +1,16 @@
+
+/*1: Seleccionamos el Selector de etiqueta*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: green;
+}
+/*2: Seleccion por clase */
+.tituloAzul{
+    color: blue;
+}
+/*3: Seleccionamos por ID*/
+#parrafoAzul{
+    color: blue;
+}
